@@ -1,0 +1,49 @@
+<header>
+  <%= link_to logo, root_path %>    
+</header>
+<% if !signed_in? %>
+<nav id="main-nav-out">
+  
+  <%= form_for(:session, :url => sessions_path) do |f| %>
+<section id="loginform">
+  <span class="loginfield">
+    <%= f.label :email %>
+    <%= f.text_field :email%>
+  </span>
+  <span class="loginfield">
+    <%= f.label :password, "Lösenord" %>
+    <%= f.password_field :password %>
+  </span>
+  <span class="loginfield">
+    <%= f.label :remember_me, "Kom ihåg?" %>
+    <input type="checkbox" name="remember_me" id="remember_me" checked> 
+  </span>
+  <span class="loginactions">
+    <%= f.submit "Logga in" %>
+  </span>
+  
+</section>
+<% end %>
+
+<ul>
+    <li class="round"><%= link_to "Start", root_path %></li>
+    <li class="round"><%= link_to "Om oss", om_oss_path %></li>
+    <li class="round"><%= link_to "Kontakt", kontakt_path %></li>
+  </ul>
+</nav>
+
+<% else %>
+<nav id="main-nav-in">
+<ul>
+    <li class="round"><%= link_to "Start", root_path %></li>
+    <li class="round"><%= link_to "Profil", current_user %></li>
+    <li class="round"><%= link_to "Användarinställningar", edit_user_path(current_user) %></li>
+    <% if current_user.admin? %>
+    <li class="round"><%= link_to "Användare", users_path %></li>
+    <% end %>
+    <li class="round"><%= link_to "Om oss", om_oss_path %></li>
+    <li class="round"><%= link_to "Kontakt", kontakt_path %></li>
+    <li class="round"><%= link_to "Logga ut", loggaut_path, :method => :delete %></li>
+  </ul>
+</nav>
+<% end %>

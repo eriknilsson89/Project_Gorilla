@@ -1,0 +1,11 @@
+<h1>Registrera dig!</h1>
+  
+<%= form_for(@user) do |f| %>
+
+  <%= render 'fields', :f => f %>
+  <div class="signupform">
+  <p class="actions">
+    <%= f.submit "Logga in" %><br /> 
+  </p>
+</div>
+<% end %>

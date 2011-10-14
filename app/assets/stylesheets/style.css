@@ -1,0 +1,208 @@
+body
+{
+  background: Black;
+}
+p
+{
+  font-size: 13px;
+  font-family: Arial;  
+}
+h1, h2, h3, h4, h5
+{
+  font-family: Myriad Pro, Arial, Sans-serif;
+}
+h1
+{
+  font-size: 40px;
+}
+
+#container
+{
+  width: 800px;
+  margin: auto;
+  color: White;
+}
+
+#content
+{
+  background: Black;
+  width: 800px;
+  min-height: 350px;
+  height: auto;
+  margin-top: -2px;
+  z-index: 10;
+  border-bottom: 3px solid Green;
+}
+#content h1, p
+{
+  margin: 10px;
+}
+#main-nav-out, #main-nav-in
+{
+  background: Black;
+  color: White;
+  float: right;
+  width: 650px;
+  height: 35px;
+  border: 3px solid Green;
+  
+  -moz-border-bottom-left-radius:     10px;
+  -webkit-border-bottom-left-radius:  10px;
+  border-bottom-left-radius:          10px;
+  -moz-border-bottom-right-radius:    10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius:         10px;
+}
+
+#main-nav-out ul
+{
+  display: inline;
+  float: right;
+  font-size: 13px;
+  font-family: Georgia, Verdana, Sans-serif;
+  text-decoration: none;
+  margin-top: -21px;
+}
+#main-nav-in ul
+{
+  display: inline;
+  float: right;
+  font-size: 13px;
+  font-family: Georgia, Verdana, Sans-serif;
+  text-decoration: none;
+  margin-top:10px;
+}
+#main-nav-out, #main-nav-in li
+{
+  display: inline;
+  padding: 10px;
+}
+#main-nav-out, #main-nav-in ul li a:link
+{
+  color : white;
+}
+#main-nav-out, #main-nav-in ul li a:visited
+{color : white;}
+#main-nav-out, #main-nav-in ul li:hover
+{background : Green;}
+#main-nav-out, #main-nav-in ul li a:active
+{color : white;}
+#loginform
+{
+  display: block;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+#session_email, #session_password
+{
+  width: 100px;
+}
+footer
+{
+  background: Green;
+  height: 80px;
+  width: 800px;
+  margin-top: -20px;
+  z-index: 5;
+  -moz-border-bottom-left-radius:     10px;
+  -webkit-border-bottom-left-radius:  10px;
+  border-bottom-left-radius:          10px;
+  -moz-border-bottom-right-radius:    10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius:         10px;
+}
+footer p
+{
+  margin: auto;
+}
+.round 
+{
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+#profileinfo
+{
+  width: 425px;
+  float: left;
+  
+}
+#profilesidebar
+{
+  float: right;
+  width: 200px;
+  margin-top: 0px;
+  background-color: Black;
+  border: 3px solid Green;
+}
+#profilesidebar p
+{
+  margin: 10px;
+}
+.gravatar
+{
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+.bold
+{
+  font-weight: bold;
+}
+.field, .actions{
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+  margin-left: 15px;
+  color: #333;
+}
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  margin-top: 18px;
+  list-style: none;
+}

@@ -1,0 +1,10 @@
+<section class='profileinfo'>
+  <h1>
+    <%= gravatar_for @user %>
+    <%= @user.name %>
+  </h1>
+  <aside id="profilesidebar" class='round'>
+    <p class='bold'>Namn: <%= @user.name%></p>
+    <p class='bold'>URL: <%= link_to user_path(@user), @user%></p>
+  </aside>
+</section>
